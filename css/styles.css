@@ -124,6 +124,9 @@ header{
 }
 
 /* Our Plants container styles here  */
+main{
+    margin: var(--margin-spacing);
+}
 .our-plants-container{
     margin: 4rem var(--margin-spacing);
     text-align: center;
@@ -185,6 +188,64 @@ header{
     background-color: #45a049;
 }
 
+/* Flower-Plants Lovers container  */
+
+.flower-plants-lovers-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 4rem ;
+    gap: 2rem;
+}
+
+.flower-plants-lovers-content{
+    padding-left: 2rem;
+    padding-top: 4rem;
+}
+
+.flower-plants-lovers-btn{
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: background-color var(--transition-duration);
+    margin-top: 0.5rem;
+}
+
+.flower-plants-lovers-btn:hover{
+    background-color: #e68a00;  
+}
+.flower-plants-lovers-image img{
+    width: 400px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.flower-plants-lovers-image{
+    
+}
+
+.trusted-badge{
+    position: relative;
+    top: 100%;
+    bottom: -100%;
+    left: 0%;
+    right: 40%;
+    text-align: right;
+}
+
+.trusted-badge img{
+    height: 100px;
+    width: auto;
+    position: relative;
+    top: 50px;
+    right: -20px;
+    border-radius: var(--border-radius);
+}
 
 /* Responsive styles  */
 
@@ -266,7 +327,24 @@ header{
     .our-plants-items{
         grid-template-columns: repeat(1, 1fr);
     }
+    /* Flower-Plants Lovers container  */
+    .flower-plants-lovers-container{
+        flex-direction: column;
+        margin: 4rem 1rem;
+    }
+    .flower-plants-lovers-image img{
+        width: 100vw;
+        height: auto;
+        margin-top: 2rem;
+        text-align: left;
+    }
 
+    .flower-plants-lovers-content{
+        padding: 0;
+    }
+    .trusted-badge{
+        display: none;
+    }
 }
 
 /* responsive for medium devices  */
@@ -299,5 +377,11 @@ header{
     .our-plants-items{
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    /* flower plants lovers container  */
+    .flower-plants-lovers-container{
+        flex-direction: column;
+        margin: 4rem var(--margin-spacing-medium);
+    }
+
 }
