@@ -149,7 +149,7 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 2rem var(--margin-spacing);
 }
 
 .plant-item{
@@ -333,6 +333,59 @@ main{
     background-color: #45a049;  
 }
 
+/* join the bunch container styles here   */
+
+.join-the-bunch-container{
+    background-image: url('../assets/news-letter-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem 0rem;
+}
+.join-bunch-content{
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.join-bunch-title{
+    font-family: var(--heading-font-family);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.email-input{
+    padding: 0.7rem;
+    width: 60%;
+    border: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-size: 1rem;
+}
+
+.email-input:focus{
+    outline: none;
+}
+
+.join-bunch-btn{
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: background-color var(--transition-duration);
+}
+
+.join-bunch-btn:hover{
+    background-color: #e68a00;  
+}
+
+
+
 /* Responsive styles  */
 
 /* responsive for smaller devices   */
@@ -464,6 +517,11 @@ main{
     }
     .deals-info-zaba{
     padding: 50px;
+}
+
+/* join the bunch container styles here    */
+.join-bunch-content{
+    width: 100%;
 }
 
 }
