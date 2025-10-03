@@ -123,6 +123,68 @@ header{
     color: var(--text-color);
 }
 
+/* Our Plants container styles here  */
+.our-plants-container{
+    margin: 4rem var(--margin-spacing);
+    text-align: center;
+}
+
+.our-plants-description{
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin-top: 1rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-text{
+    color: var(--primary-color);
+}
+
+.our-plants-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.plant-item{
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    text-align: center;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.plant-item img{
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.2rem;
+}
+
+.plant-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-btn{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: background-color var(--transition-duration);
+    margin-top: 0.5rem;
+}
+
+.plant-btn:hover{
+    background-color: #45a049;
+}
+
 
 /* Responsive styles  */
 
@@ -194,6 +256,17 @@ header{
         height: auto;
         margin-top: 2rem;
     }
+    /* our plants container styles here   */
+    .our-plants-container{
+        margin: 4rem 1rem;
+    }
+    .our-plants-description{
+        width: 100%;
+    }   
+    .our-plants-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 /* responsive for medium devices  */
@@ -215,4 +288,16 @@ header{
         height: auto;
         margin-top: 2rem;
     }
+
+    /* our plant container styles here */
+    .our-plants-container{
+        margin: 4rem var(--margin-spacing-medium);
+    }   
+    .our-plants-description{
+        width: 100%;
+    }
+    .our-plants-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
